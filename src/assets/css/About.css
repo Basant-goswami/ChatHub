@@ -1,0 +1,111 @@
+/* About.css */
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.bg-light {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.bg-light-rounded {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.bg-light-rounded:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.display-5 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.lead {
+  font-weight: 300;
+}
+
+/* Feature icons */
+.fa-comments,
+.fa-circle,
+.fa-lock,
+.fa-mobile-alt {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .fa-comments,
+.card:hover .fa-circle,
+.card:hover .fa-lock,
+.card:hover .fa-mobile-alt {
+  transform: scale(1.1);
+}
+
+/* Tech stack items */
+.bg-light-rounded {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-5 {
+    font-size: 2.5rem;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .bg-light-rounded {
+    padding: 1rem !important;
+  }
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+.icons i:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+}

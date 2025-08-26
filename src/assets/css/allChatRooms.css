@@ -1,0 +1,12 @@
+.chat-room-list {
+  max-height: calc(100vh - 70px);
+  overflow-y: auto;
+  margin-top: 4px;
+  border: none;
+}
+
+.chat-room-list li {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}

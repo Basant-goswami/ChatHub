@@ -1,0 +1,156 @@
+/* PrivateChatRoom.css */
+.modal-content {
+  border-radius: 12px;
+}
+
+.modal-header {
+  padding: 1.25rem 1.5rem 0.5rem;
+}
+
+.modal-body {
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+
+.modal-footer {
+  padding: 0.5rem 1.5rem 1.25rem;
+}
+
+/* Custom select styles */
+.form-select-custom {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  min-height: 45px;
+}
+
+.form-select-custom:hover {
+  border-color: #6366f1;
+}
+
+/* User list dropdown - FIXED: Changed from absolute to visible */
+.user-list-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  margin-top: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: translateY(-10px);
+}
+
+.user-list-dropdown.show {
+  max-height: 250px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.user-list-scroll {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+/* User list items */
+.user-list-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.user-list-item:last-child {
+  border-bottom: none;
+}
+
+.user-list-item:hover {
+  background-color: #f8f9fa;
+}
+
+.user-list-item.selected {
+  background-color: #eef2ff;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.user-name {
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  padding: 0.625rem 1.25rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  border: none;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-outline-secondary {
+  border: 1px solid #dee2e6;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+}
+
+/* Scrollbar styling */
+.user-list-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.user-list-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.user-list-scroll::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.user-list-scroll::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
