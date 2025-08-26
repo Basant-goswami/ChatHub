@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import API from "../../api";
-import "../assets/css/groupChatRoom.css";
+import "../assets/css/GroupChatRoom.css";
 
 export default function GroupChatRoom({ user, onClose, onSuccess }) {
   const [roomName, setRoomName] = useState("");
