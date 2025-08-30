@@ -14,7 +14,7 @@ ChatHub is a **full-stack real-time chat application** built with **Spring Boot 
 - 🌍 **CORS Configured** – Smooth communication between frontend & backend  
 - 🖥 **Frontend** – Built with React + Vite  
 - ⚡ **Backend** – Spring Boot REST APIs  
-- 🚀 **Deployment Ready** – Configured for cloud deployment (Render/Netlify/Vercel)  
+- 🚀 **Deployment Ready** – Configured for cloud deployment (Render/Netlify)  
 
 ---
 
