@@ -1,12 +1,46 @@
-# React + Vite
+# 🚀 ChatHub – Real-time Chat Application  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ChatHub is a **full-stack real-time chat application** built with **Spring Boot (backend)**, **PostgreSQL (database)**, and **React (frontend)**. It provides secure authentication and seamless messaging with a modern UI.  
 
-Currently, two official plugins are available:
+🔗 **Live Demo**: [Click here to try ChatHub](https://basant-chathub.netlify.app)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔑 Features  
+- 👤 **User Authentication** – Login & Register with JWT security  
+- 🔐 **Password Encryption** – Secure user data with hashing  
+- 💬 **Real-time Messaging** – One-to-one chat functionality  
+- 📂 **Database Integration** – PostgreSQL with JPA & Hibernate  
+- 🌍 **CORS Configured** – Smooth communication between frontend & backend  
+- 🖥 **Frontend** – Built with React + Vite  
+- ⚡ **Backend** – Spring Boot REST APIs  
+- 🚀 **Deployment Ready** – Configured for cloud deployment (Render/Netlify/Vercel)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack  
+- **Backend**: Spring Boot, Spring Security, JWT, Hibernate  
+- **Frontend**: React (Vite), Bootstrap  
+- **Database**: PostgreSQL  
+
+---
+
+## ⚙️ Setup Instructions  
+
+### 1️⃣ Backend (Spring Boot)  
+```bash
+# Clone repository
+git clone https://github.com/your-username/chathub.git
+cd chathub/backend
+
+# Configure database in application.properties
+spring.datasource.url=jdbc:postgresql://<your-db-url>:5432/chathubdb
+spring.datasource.username=<your-db-username>
+spring.datasource.password=<your-db-password>
+
+# Build & Run
+mvn clean package
+java -jar target/chathub-0.0.1-SNAPSHOT.jar
+
+
+
